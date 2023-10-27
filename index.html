@@ -50,6 +50,13 @@ td.details {
   text-align: right;
 }
 
+.img-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #616161cc;
+}
+
 @media screen and (max-width: 750px) {
     iframe {
         max-width: 100% !important;
@@ -217,19 +224,26 @@ td.details {
     <div class="w3-third">
       <img src="/images/Khaya_closed_from_above.png" style="width:100%" onclick="onClick(this)" alt="Khaya geschlossen. Fotografiert von oben">
       <img src="/images/Khaya_closed_left_side.png" style="width:100%" onclick="onClick(this)" alt="Khaya geschlossen, linke Seite">
-      <img src="/images/Khaya_closed_from_above.png" style="width:100%" onclick="onClick(this)" alt="Canoeing again">
+      <img src="/images/ac-kh-unit-comfort-b_khaya rhs.jpg" style="width:100%" onclick="onClick(this)" alt="Schema Khaya von rechts">
+      <img src="/images/ac-kh-unit-comfort-b_132-khaya-assy-top bed-01.jpg" style="width:100%" onclick="onClick(this)" alt="Schema Innenraum oben (Liegefläche)">
     </div>
 
     <div class="w3-third">
-      <img src="/images/Khaya_closed_front.png" style="width:100%" onclick="onClick(this)" alt="Khaya geschlossen von vorne">
-      <img src="/images/Khaya_closed_back.png" style="width:100%" onclick="onClick(this)" alt="Khaya geschlossen von hinten">
-      <img src="/images/Khaya_closed_from_above.png" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
+      <div class="img-container">
+        <img src="/images/Khaya_closed_front.png" style="max-width:100%; max-height:325px" onclick="onClick(this)" alt="Khaya geschlossen von vorne">
+      </div>
+      <div class="img-container">
+        <img src="/images/Khaya_closed_back.png" style="max-width:100%; max-height:325px" onclick="onClick(this)" alt="Khaya geschlossen von hinten">
+      </div>
+      <img src="/images/ac-kh-unit-comfort-b_132-khaya-assy-top-floor-plan-01-00.jpg" style="width:100%" onclick="onClick(this)" alt="Schema Innenraum unten">
     </div>
     
     <div class="w3-third">
       <img src="/images/Khaya_closed_right_side.png" style="width:100%" onclick="onClick(this)" alt="Khaya geschlossen, rechte Seite">
-      <img src="/images/Khaya_closed_back_left.png" style="width:100%" onclick="onClick(this)" alt="Khaya geschlossen von hinten links">
-      <img src="/images/Khaya_closed_from_above.png" style="width:100%" onclick="onClick(this)" alt="What a beautiful day!">
+      <div class="img-container">
+        <img src="/images/Khaya_closed_back_left.png" style="max-width:100%; max-height:325px" onclick="onClick(this)" alt="Khaya geschlossen von hinten links">
+      </div>
+      <img src="/images/ac-kh-unit-comfort-b_khaya lhs.jpg" style="width:100%" onclick="onClick(this)" alt="Schema Khaya von links">
     </div>
   </div>
   
