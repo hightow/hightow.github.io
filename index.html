@@ -328,25 +328,60 @@ td.details {
 </div>
 
 <script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
+  registerKeyHandler();
+  // Script to open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+  
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
 
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    const captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
 
+  function registerKeyHandler(){
+    // Event listener to handle arrow key presses
+    document.addEventListener('keydown', function (e) {
+      const modal = document.getElementById('modal01');
+      if (modal.style.display === 'block') {
+        if (e.key === 'ArrowLeft') {
+          changeImage(-1); // Load the previous image
+        } else if (e.key === 'ArrowRight') {
+          changeImage(1); // Load the next image
+        } else if (e.key === 'Escape'){
+          modal.style.display = 'none';
+        }
+      }
+    });
+  }
+
+  function changeImage(direction){
+    const currentImage = document.getElementById("img01");
+    let allImages = [...document.getElementsByTagName("img")];
+    const currentOriginalImageIndex = allImages.indexOf(currentImage);
+    allImages.splice(currentOriginalImageIndex, 1);
+
+    const currentImageIndex = allImages.findIndex(img => img.src === currentImage.src);
+    if(currentImageIndex === -1){ return; }
+    
+    let newIndex = (currentImageIndex + direction) % allImages.length;
+    if(newIndex === -1 && allImages.length > 0){
+      newIndex = allImages.length - 1;
+    }
+    const element = allImages[newIndex];
+    document.getElementById("img01").src = element.src;
+    const captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
 </script>
 
 
