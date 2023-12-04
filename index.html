@@ -69,6 +69,33 @@ td.details {
   color: #40e740;
 }
 
+.sold {
+  position: absolute;
+  width: 270px;
+  transform: rotate(33deg);
+}
+
+.sold img {
+  width: 100%;
+}
+
+.khaya {
+  position: relative;
+}
+
+.khaya .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #616161aa;
+  max-width: 600px;
+  pointer-events: none;
+}
+
+.price-table-container {
+  overflow-x: auto;
+}
+
 @media screen and (max-width: 750px) {
     iframe {
         max-width: 100% !important;
@@ -110,125 +137,133 @@ td.details {
     <h4><b>Informationen</b></h4>
     <img src="/images/Khaya_Open.png" alt="Khaya im Einsatz" class="w3-image w3-padding-32 clickable" onclick="onClick(this)" width="600">
     <div class="w3-content w3-justify" style="max-width:600px">
-      <h4>Alu-Cab Khaya</h4>
-      <p>Wir verkaufen wegen Nachwuchs unsere geliebte Aufsetzkabine, welche für jeden gängigen Pickup passt.</p>
-      <p>Sie hat Jahrgang 2018 und ist in gutem, gepflegtem Zustand.</p>
-      <p>Es handelt sich um die Ausführung Alu-Cab Khaya Absetzkabine Version Comfort.</p>
-      <ul>
-        <li><a target="_blank" href="https://www.alu-cab.com/product/khaya-2-sleeper-camper/">Beschreibung auf Alu-Cab Homepage</a></li>
-        <li><a target="_blank" href="https://shop.genesis-import.de/de-de/alu-cab-khaya-camper-komfort-einheit-3-schwarz-ac--kh--unit--comfort--b">Beschreibung bei Genesis Import Deutschland</a></li>
-        <li><a target="_blank" href="https://www.youtube.com/watch?v=Awh1pIEVbwQ">Vorstellungs-Video</a></li>
-        <li><a target="_blank" href="https://storm72.ch/shop/product_info.php?info=p1528_alu-cab-khaya-camper-komfort--schwarz--2-personen.html">Beschreibung von Storm72 Schweiz</a></li>
-      </ul>
-      <hr class="w3-opacity">
-      <h4>Preisvorstellung:</h4>
-      <div class="large-text"><b>CHF 35'000.-</b></div>
-      <br>
-      <div>Originalpreis inkl. allem Zubehör wie aufgelistet: CHF 41'327.60</div>
-      <br>
-      <table>
-        <tr class="underline">
-          <th>Kategorie</th><th>Objekt</th><th>Details</th><th>Preis</th>
-        </tr>
-        <tr>
-          <td rowspan="5" class="underline-cell"><b>Khaya Komfort</b></td>
-          <td><b>Standardkabine</b></td>
-          <td class="details">Dachzelt, Matratze, Seiten- und Innenfächer, Vinylboden, Teppichauskleidung, etc.</td>
-          <td rowspan="5" class="underline-cell price">CHF 30'065.00</td>
-        </tr>
-        <tr>
-          <td class="bg-1"><b>Elektrik</b></td>
-          <td class="bg-1 details right-line">
-            Installation Elektrik (inkl. Regulator, Spannungsanzeige, Ladegerät, Spannungswandler, ohne Batterie)<br>
-            LED-Beleuchtung (6 Leuchten)<br>
-            Glas-Solarpanel
-          </td>
-        </tr>
-        <tr>
-          <td><b>Wasser</b></td>
-          <td class="details right-line">
-            Installation Wasser (inkl. Wassertank, Dusche, Duschvorhang, Wasserzapfstelle)<br>
-            Trittfläche fur Outdoor-Dusche
-          </td>
-        </tr>
-        <tr>
-          <td class="bg-1"><b>Küche und Essen</b></td>
-          <td class="bg-1 details right-line">
-            Staubox für Kühlschrank mit Stofftür und Reissverschluss<br>
-            Küchenblock mit 2 Flammen-Gaskocher, Spüle, 2 Schubladen, 2 Staufächer mit Stofftüren<br>
-            Halter für 3 kg-Gasflasche (Seitenfach vorne rechts)<br>
-            Alu-Tisch (verstaut unter Kabinenüberhang)
-          </td>
-        </tr>
-        <tr class="underline">
-          <td><b>Ausrüstung und Komfort</b></td>
-          <td class="details right-line">
-            Stautaschen mit Reissverschlüssen an hinterer Tür<br>
-            Moskitonetz mit Reissverschluss an hinterer Tür<br>
-            Querträger für Khaya-Dach 1450 mm
-          </td>
-        </tr>
-        <tr class="underline">
-          <td rowspan="13"><b>Zusatzausstattung</b></td>
-          <td rowspan="8"><b>Küche und Essen</b></td>
-          <td class="details no-underline">Kücheneinrichtung (Geschirr, Töpfe, etc. inkl. Halterungen)</td>
-          <td class="price no-underline">CHF 439.00</td>
-        </tr>
-        <tr>
-          <td class="bg-1 details">Aussenarbeitsfläche für Küche</td>
-          <td class="bg-1 price">CHF 265.00</td>
-        </tr>
-        <tr>
-          <td class="details">Snomaster Kühlbox SMDZ-CL56D</td>
-          <td class="price">CHF 1'060.00</td>
-        </tr>
-        <tr>
-          <td class="bg-1 details">Set mit 2 Front Runner Expander-Stühlen, inkl. Stautasche</td>
-          <td class="bg-1 price">CHF 227.00</td>
-        </tr>
-        <tr>
-          <td class="details">Standheizung inkl. Boiler und separatem Diesel-Tank eingebaut (Planar / Autotherm 2 D Dieselheizung)</td>
-          <td class="price">CHF 3'000.00</td>
-        </tr>
-        <tr>
-          <td class="bg-1 details">Spaten mit Halterung an Tür Seitenfach hinten rechts</td>
-          <td class="bg-1 price">CHF 87.60</td>
-        </tr>
-        <tr>
-          <td class="details">Benzinkanisterhalter</td>
-          <td class="price">CHF 207.00</td>
-        </tr>
-        <tr class="underline">
-          <td class="bg-1 details">Reserveradhalter</td>
-          <td class="bg-1 price">CHF 1'132.00</td>
-        </tr>
-        <tr class="underline">
-          <td rowspan="4"><b>270° Markise Shadow Awn</b></td>
-          <td class="details no-underline">270° Markise Shadow Awn</td>
-          <td class="price no-underline">CHF 1'789.00</td>
-        </tr>
-        <tr>
-          <td class="bg-1 details">Montagehalterung für 270° Markise</td>
-          <td class="bg-1 price">CHF 162.00</td>
-        </tr>
-        <tr>
-          <td class="details">Seitenwände für 270° Markise</td>
-          <td class="price">CHF 1'727.00</td>
-        </tr>
-        <tr class="underline">
-          <td class="bg-1 details underline">Regenschutz Heck für 270° Markise</td>
-          <td class="bg-1 price underline">CHF 147.00</td>
-        </tr>
-        <tr class="underline">
-          <td><b>Montage</b></td>
-          <td class="details">Rieco-Titan Kurbelstützen (4er-Set), inkl. Khaya-Halterungen</td>
-          <td class="price">CHF 1'020.00</td>
-        </tr>
-        <tr class="underline">
-          <td colspan="3"><b>TOTAL</b></td>
-          <td class="price"><b>CHF 41'327.60</b></td>
-        </tr>
-      </table>
+      <diV class="khaya">
+        <h4>Alu-Cab Khaya</h4>
+        <div class="overlay"></div>
+        <p>Wir verkaufen wegen Nachwuchs unsere geliebte Aufsetzkabine, welche für jeden gängigen Pickup passt.</p>
+        <p>Sie hat Jahrgang 2018 und ist in gutem, gepflegtem Zustand.</p>
+        <p>Es handelt sich um die Ausführung Alu-Cab Khaya Absetzkabine Version Comfort.</p>
+        <ul>
+          <li><a target="_blank" href="https://www.alu-cab.com/product/khaya-2-sleeper-camper/">Beschreibung auf Alu-Cab Homepage</a></li>
+          <li><a target="_blank" href="https://shop.genesis-import.de/de-de/alu-cab-khaya-camper-komfort-einheit-3-schwarz-ac--kh--unit--comfort--b">Beschreibung bei Genesis Import Deutschland</a></li>
+          <li><a target="_blank" href="https://www.youtube.com/watch?v=Awh1pIEVbwQ">Vorstellungs-Video</a></li>
+          <li><a target="_blank" href="https://storm72.ch/shop/product_info.php?info=p1528_alu-cab-khaya-camper-komfort--schwarz--2-personen.html">Beschreibung von Storm72 Schweiz</a></li>
+        </ul>
+        <hr class="w3-opacity">
+        <div class="sold">
+          <img src="assets/sold-1196348_1280.png" alt="verkauft">
+        </div>
+        <h4>Preisvorstellung:</h4>
+        <div class="large-text"><b>CHF 35'000.-</b></div>
+        <br>
+        <div>Originalpreis inkl. allem Zubehör wie aufgelistet: CHF 41'327.60</div>
+        <br>
+        <div class="price-table-container">
+          <table>
+            <tr class="underline">
+              <th>Kategorie</th><th>Objekt</th><th>Details</th><th>Preis</th>
+            </tr>
+            <tr>
+              <td rowspan="5" class="underline-cell"><b>Khaya Komfort</b></td>
+              <td><b>Standardkabine</b></td>
+              <td class="details">Dachzelt, Matratze, Seiten- und Innenfächer, Vinylboden, Teppichauskleidung, etc.</td>
+              <td rowspan="5" class="underline-cell price">CHF 30'065.00</td>
+            </tr>
+            <tr>
+              <td class="bg-1"><b>Elektrik</b></td>
+              <td class="bg-1 details right-line">
+                Installation Elektrik (inkl. Regulator, Spannungsanzeige, Ladegerät, Spannungswandler, ohne Batterie)<br>
+                LED-Beleuchtung (6 Leuchten)<br>
+                Glas-Solarpanel
+              </td>
+            </tr>
+            <tr>
+              <td><b>Wasser</b></td>
+              <td class="details right-line">
+                Installation Wasser (inkl. Wassertank, Dusche, Duschvorhang, Wasserzapfstelle)<br>
+                Trittfläche fur Outdoor-Dusche
+              </td>
+            </tr>
+            <tr>
+              <td class="bg-1"><b>Küche und Essen</b></td>
+              <td class="bg-1 details right-line">
+                Staubox für Kühlschrank mit Stofftür und Reissverschluss<br>
+                Küchenblock mit 2 Flammen-Gaskocher, Spüle, 2 Schubladen, 2 Staufächer mit Stofftüren<br>
+                Halter für 3 kg-Gasflasche (Seitenfach vorne rechts)<br>
+                Alu-Tisch (verstaut unter Kabinenüberhang)
+              </td>
+            </tr>
+            <tr class="underline">
+              <td><b>Ausrüstung und Komfort</b></td>
+              <td class="details right-line">
+                Stautaschen mit Reissverschlüssen an hinterer Tür<br>
+                Moskitonetz mit Reissverschluss an hinterer Tür<br>
+                Querträger für Khaya-Dach 1450 mm
+              </td>
+            </tr>
+            <tr class="underline">
+              <td rowspan="13"><b>Zusatzausstattung</b></td>
+              <td rowspan="8"><b>Küche und Essen</b></td>
+              <td class="details no-underline">Kücheneinrichtung (Geschirr, Töpfe, etc. inkl. Halterungen)</td>
+              <td class="price no-underline">CHF 439.00</td>
+            </tr>
+            <tr>
+              <td class="bg-1 details">Aussenarbeitsfläche für Küche</td>
+              <td class="bg-1 price">CHF 265.00</td>
+            </tr>
+            <tr>
+              <td class="details">Snomaster Kühlbox SMDZ-CL56D</td>
+              <td class="price">CHF 1'060.00</td>
+            </tr>
+            <tr>
+              <td class="bg-1 details">Set mit 2 Front Runner Expander-Stühlen, inkl. Stautasche</td>
+              <td class="bg-1 price">CHF 227.00</td>
+            </tr>
+            <tr>
+              <td class="details">Standheizung inkl. Boiler und separatem Diesel-Tank eingebaut (Planar / Autotherm 2 D Dieselheizung)</td>
+              <td class="price">CHF 3'000.00</td>
+            </tr>
+            <tr>
+              <td class="bg-1 details">Spaten mit Halterung an Tür Seitenfach hinten rechts</td>
+              <td class="bg-1 price">CHF 87.60</td>
+            </tr>
+            <tr>
+              <td class="details">Benzinkanisterhalter</td>
+              <td class="price">CHF 207.00</td>
+            </tr>
+            <tr class="underline">
+              <td class="bg-1 details">Reserveradhalter</td>
+              <td class="bg-1 price">CHF 1'132.00</td>
+            </tr>
+            <tr class="underline">
+              <td rowspan="4"><b>270° Markise Shadow Awn</b></td>
+              <td class="details no-underline">270° Markise Shadow Awn</td>
+              <td class="price no-underline">CHF 1'789.00</td>
+            </tr>
+            <tr>
+              <td class="bg-1 details">Montagehalterung für 270° Markise</td>
+              <td class="bg-1 price">CHF 162.00</td>
+            </tr>
+            <tr>
+              <td class="details">Seitenwände für 270° Markise</td>
+              <td class="price">CHF 1'727.00</td>
+            </tr>
+            <tr class="underline">
+              <td class="bg-1 details underline">Regenschutz Heck für 270° Markise</td>
+              <td class="bg-1 price underline">CHF 147.00</td>
+            </tr>
+            <tr class="underline">
+              <td><b>Montage</b></td>
+              <td class="details">Rieco-Titan Kurbelstützen (4er-Set), inkl. Khaya-Halterungen</td>
+              <td class="price">CHF 1'020.00</td>
+            </tr>
+            <tr class="underline">
+              <td colspan="3"><b>TOTAL</b></td>
+              <td class="price"><b>CHF 41'327.60</b></td>
+            </tr>
+          </table>
+        </div>
+      </diV>
       <div style="padding-top: 2rem;" id="amarok">
         <h4>VW Amarok</h4>
         <p>Das Fahrzeug auf den Bildern steht momentan auch zum Verkauf:</p>
@@ -312,12 +347,12 @@ td.details {
   <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
     <div class="w3-content" style="max-width:600px">
       <h4 class="w3-center"><b>Kontakt</b></h4>
-      <p>Kabine kann momentan bei storm72 Offroad Garage in 3436 Zollbrück angeschaut werden.
-	  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1144.40625132138!2d7.729301433435672!3d46.98384646438105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478fcc3426f21e19%3A0x3424fbd200fd5e3f!2sStorm72.ch%20-%20Thomas%20Strahm%20-%20Offroad-Tuning!5e0!3m2!1sen!2sch!4v1696607192324!5m2!1sen!2sch" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </p>
-      <div>
-		Unsere Angaben:<br>
-		Christoph & Samira Tschui<br>
-		E-Mail: <object class="svg-email-protection" data="assets/contact.svg" type="image/svg+xml"></object><br>
+      <!-- <p>Kabine kann momentan bei storm72 Offroad Garage in 3436 Zollbrück angeschaut werden.
+	    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1144.40625132138!2d7.729301433435672!3d46.98384646438105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478fcc3426f21e19%3A0x3424fbd200fd5e3f!2sStorm72.ch%20-%20Thomas%20Strahm%20-%20Offroad-Tuning!5e0!3m2!1sen!2sch!4v1696607192324!5m2!1sen!2sch" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </p> -->
+    <div>
+      Unsere Angaben:<br>
+      Christoph & Samira Tschui<br>
+      E-Mail: <object class="svg-email-protection" data="assets/contact.svg" type="image/svg+xml"></object><br>
 	  </div>
     </div>
   </div>
